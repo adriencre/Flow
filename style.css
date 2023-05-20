@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    background-color: #F5F1ED;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    margin-top: 40px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0); /* Couleur d'arrière-plan avec transparence */
+    backdrop-filter: blur(3px); /* Effet de flou */
+}
+
+section.accueil{
+    margin-top: 0;
+    background: url('fond1.jpg');
+    background-size: cover;
+    height: 80vh;
+}
+
+nav.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 60px;
+    font-size: 17px;
+}
+
+header.header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+}
+
+h1.Title{
+    font-size: 40px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #252323;
+}
+
+h2.flow{
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+h1.moi{
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 50px;
+    position: relative;
+}
+
+h1.moi::before{
+    content: "";
+    position: absolute;
+    background-color: #A99985;
+    width: 50px;
+    height: 7px;
+    top: 100%;
+}
+
+img.moi{
+    width: 300px;
+    height: 400px;
+    margin-left: 10px;
+}
+header.header2{
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+h1.offres{
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 50px;
+    position: relative;
+}
+
+h1.offres::before{
+    content: "";
+    position: absolute;
+    background-color: #A99985;
+    width: 50px;
+    height: 7px;
+    top: 100%;
+}
+
+.offre{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 40px;
+}
+  
+  .offre1{
+    width: 400px; 
+    height: 500px; 
+    background-color: #A99985; 
+    margin: 20px; 
+    text-align: center;
+    font-size: 30px;
+}
+
+.offre2{
+    width: 400px; 
+    height: 500px; 
+    background-color: #A99985; 
+    margin: 20px; 
+    text-align: center;
+    font-size: 30px;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#decouvrir-btn {
+    background-color: #A99985;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 330px;
+    cursor: pointer;
+  }
+
+  #contacte-btn {
+    background-color: #DAD2BC;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+
+h4.modification{
+    text-align: start;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+h1.prix{
+    margin-top: 75px;
+    margin-bottom: 0;
+}
+
+h1.prix2{
+    margin-top: -50px;
+    margin-bottom: 0;
+}
+div.logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .phone-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 10px;
+  }
+
+div.all{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.decouvrir {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.decouvrir:focus{
+    outline: none; /* Supprime le contour lorsqu'il est en focus */
+}
+
+.nav li.active:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #A99985; /* Couleur de la barre active */
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #A99985;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.scroll-to-top-btn i {
+  color: white; /* Couleur du logo */
+}
+
+.section-container {
+    margin-bottom: 280px;
+  }
+

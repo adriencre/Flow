@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/remixicon.css">
+    <title>Flow</title>
+</head>
+<body>
+    <section class="accueil">
+        <header class="header">
+            <h2 class="flow">FLOW</h2>
+            <nav class="nav">
+                <li><button class="decouvrir" onclick="scrollToSection(event, 'moi')">Qui suis-je</button></li>
+                <li><button class="decouvrir" onclick="scrollToSection(event, 'offres')">Mes offres</button></li>
+                <li><button class="decouvrir" onclick="scrollToSection(event, 'contacter')">Contacter moi</button></li>
+            </nav>
+        </header>
+        
+        <h1 class="Title">Le site dont tu rêves à portée de main</h1>
+        <div class="center-wrapper">
+            <button class="decouvrir" id="decouvrir-btn" onclick="scrollToSection(event, 'moi')">Découvrir</button>
+        </div>
+    </section>
+    
+    <section class="qui_suis_je" id="moi">
+        <h1 class="moi">Qui suis-je</h1>
+        <header class="header2">
+            <img class="moi" src="IMG_1816.jpg" alt="photo createur">
+            <h3 class="prez">Permettez-moi de me présenter : je suis un étudiant en développement informatique à l'EPSI, passionné par la création de sites web et en recherche de challenge j’espère que je pourrais vous aider</h3>
+        </header>
+    </section>
+    
+    <section class="mes_offres" id="offres">
+        <h1 class="offres">Mes offres</h1>
+        <div class="offre">
+            <div class="offre1">
+                <h2 class="Site simple">Site simple</h2>
+                <h4 class="modification">modification illimitée</h4>
+                <h4 class="modification">portfolio</h4>
+                <h4 class="modification">prendre rendez-vous sur le site</h4>
+                <h4 class="modification">vous contacter</h4>
+                <h1 class="prix">399€</h1>
+                <button class="contacte" id="contacte-btn" onclick="scrollToSection(event, 'contacter')">contacter moi</button>
+            </div>
+            <div class="offre2">
+                <h2 class="Site e-commerce">Site e-commerce</h2>
+                <h4 class="modification">modification illimitée</h4>
+                <h4 class="modification">prendre rendez-vous sur le site</h4>
+                <h4 class="modification">vous contacter</h4>
+                <h4 class="modification">boutique en ligne</h4>
+                <h4 class="modification">avis clients</h4>
+                <h4 class="modification">...</h4>
+                <h1 class="prix2">599€</h1>
+                <button class="contacte" id="contacte-btn" onclick="scrollToSection(event, 'contacter')">contacter moi</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contacter_moi" id="contacter">
+        <h1 class="offres">Contacter moi</h1>
+        <div class="all">
+            <div class="logo">
+                <img class="phone" src="phone-fill.png" alt="logo appel">
+                <a href="tel:+33783401205" class="phone-link">07 83 40 12 05</a>
+            </div>
+            <div class="logo">
+                <img class="mail" src="mail-fill.png" alt="logo mail">
+                <a href="mailto:adriencrepel@icloud.com" class="phone-link">adriencrepel@icloud.com</a>
+            </div>
+        </div>
+    </section>
+    <button class="scroll-to-top-btn" onclick="scrollToTop()">
+       <img src="arrow-up-double-line.png" alt="fleche vers le haut">
+      </button>
+      <div class="section-container">
+        <!-- Vos éléments ici -->
+      </div>
+      
+
+</body>
+</html>
